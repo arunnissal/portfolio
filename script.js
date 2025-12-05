@@ -1,7 +1,8 @@
 // assets/script.js
-// Fade-in effect fix
+
+// Fade-in effect for body
 window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
+  document.body.classList.add("loaded");
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -144,7 +145,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        await emailjs.sendForm("service_yhipdig", "template_54rjmi3", form);
+        // 🔥 Using your NEW template id here
+        await emailjs.sendForm("service_yhipdig", "template_84gd1v5", form);
 
         // Success
         statusEl.classList.remove("loading-msg");
