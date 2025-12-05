@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Arunnissal B</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">ARUNNISSAL</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="section reveal">
+      <header class="section-header">
+        <h1>Let’s connect</h1>
+        <p>
+          If you have an idea, a project or just want to talk about tech,
+          feel free to reach out.
+        </p>
+      </header>
+
+      <div class="grid grid-2 contact-layout">
+        <!-- Contact details -->
+        <article class="card">
+          <h2>Contact details</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:arunnissal45@gmail.com">arunnissal45@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919361572429">+91 93615 72429</a>
+            </li>
+            <li>
+              <span class="contact-label">Location</span>
+              <span>Erode, Tamil Nadu, India</span>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/arunnissal" target="_blank">
+                github.com/arunnissal
+              </a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/arunnissal-b-3a8a33328" target="_blank">
+                View my LinkedIn profile
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Next level form -->
+        <article class="card">
+          <h2>Say hello</h2>
+          <p class="contact-intro">
+            This form uses EmailJS, so your message goes straight to my inbox.
+            I usually reply as soon as I can.
+          </p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input
+                id="name"
+                name="from_name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+              <small class="field-error" data-for="name"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="reply_to"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <small class="field-error" data-for="email"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <small class="field-error" data-for="message"></small>
+            </div>
+
+            <button type="submit" class="btn primary full-width" id="contact-submit">
+              Send message
+            </button>
+
+            <p id="form-status"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast for extra feedback -->
+  <div id="toast" class="toast"></div>
+
+  <footer class="footer">
+    <span>© 2025 Arunnissal B</span>
+    <div class="footer-links">
+      <a href="mailto:arunnissal45@gmail.com">Email</a>
+      <a href="https://github.com/arunnissal" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/arunnissal-b-3a8a33328" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- EmailJS CDN (needed here) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
